@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper-Tension Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6dd5fa, #2980b9);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h3 {
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            background: white;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #2980b9;
+            box-shadow: 0px 0px 5px rgba(41, 128, 185, 0.5);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #2980b9;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #1f6690;
+        }
+    </style>
+</head>
+<body>
+    <h1>HYPERTENSION DETECTION</h1>
+    <h3>Enter the Details</h3>
+    
+    <div class="container">
+        <form method="POST" id="Data_form">
+            <label for="age">Enter Age:</label>
+            <input id="age" placeholder="Age" name="age">
+
+            <label for="Salt_Intake">Enter Salt Intake:</label>
+            <input id="Salt_Intake" name="Salt_Intake" placeholder="Salt Intake">
+
+            <label for="Stress_Score">Enter Stress Score:</label>
+            <input id="Stress_Score" name="Stress_Score" placeholder="Stress Score">
+
+            <label for="BP_History">Enter BP History:</label>
+            <input id="BP_History" name="BP_History" placeholder="BP History">
+
+            <label for="Sleep_Duration">Enter Sleep Duration:</label>
+            <input id="Sleep_Duration" name="Sleep_Duration" placeholder="Sleep Duration">
+
+            <label for="BMI">Enter Body Mass Index:</label>
+            <input id="BMI" name="BMI" placeholder="BMI">
+
+            <label for="Medication">Enter Medication:</label>
+            <input id="Medication" name="Medication" placeholder="Medication">
+
+            <label for="Family_History">Enter Family History:</label>
+            <input id="Family_History" name="Family_History" placeholder="Family History">
+
+            <label for="Exercise_Level">Enter Exercise Level:</label>
+            <input id="Exercise_Level" name="Exercise_Level" placeholder="Exercise Level">
+
+            <label for="Smoking_Status">Enter Smoking Status:</label>
+            <input id="Smoking_Status" name="Smoking_Status" placeholder="Smoking Status">
+
+            <button type="submit" id="submit-form">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
